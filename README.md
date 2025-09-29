@@ -1,8 +1,7 @@
 Assignment 3 - Persistence: Two-tier Web Application with Database, Express server, and CSS template
 ===
 ## Movie Reviewer
-
-Your Render (or alternative server) link e.g. 
+https://a3-tiffanysemexant-a25.onrender.com/ 
 
 Include a very brief summary of your project here. Images are encouraged, along with concise, high-level text. Be sure to include:
 
