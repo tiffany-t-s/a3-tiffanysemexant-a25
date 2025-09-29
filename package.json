@@ -14,5 +14,8 @@
     "mime": "^2.6.0",
     "mongodb": "^6.20.0",
     "mongoose": "^8.18.2"
+  },
+  "repository": {
+    "url" : "https://a3-tiffanysemexant-a25.onrender.com/"
   }
 }
