@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <title>Movie Rater</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <!-- Responsive viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <script src="main.js" defer></script>
+    <!-- Minified Cirrus CSS -->
+    <link href="https://raw.githack.com/Spiderpig86/Cirrus/master/dist/cirrus.min.css" type="text/css" rel="stylesheet">
+    <!-- get rid of favicon error -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  </head>
+  <body class="bg-indigo-100">
+    <div class="grid u-gap-1 bg-indigo-100 font-bold">
+      <div class="grid-c-12 bg-purple-400 u-text-center text-indigo-900 u-round-xs">
+          <h2>Movie Reviewer</h2>
+          <p id="para1">This is a website where you can keep track of movies and your rating and reviews of them.</p>
+          <a class="btn" id = "homeButton">Login Page</a>
+      </div>
+      <div class="grid-c-2 bg-indigo-800 text-indigo-900 u-round-xs"></div>
+      <div class="grid-c-8 bg-indigo-300 text-indigo-900 u-round-xs p-2" id="middle">
+          <h2 id="bodyTitle">Add or Edit Entry</h2>
+          <p class="font-style-normal">To edit your rating or review of an existing entry, make sure to use the 
+            same movie title and release year, then hit submit. To delete an entry, make sure to use the same movie
+            title and release year, then hit delete.</p>
+          <form id="myForm">
+            <label for="movieName">Movie Title:</label><br>
+            <input type="text" class="bg-indigo-800 text-indigo-100 p-2 w-30p" id="movieName" required><br>
+            
+            <label for="releaseYear">Release Year:</label><br>
+            <input type="number" class="bg-indigo-800 text-indigo-100 p-2 w-20p" id="releaseYear" min="1800" max="2025" required><br>
+
+            <label for="starRating">Number of Stars (0 - 10):</label><br>
+            <input type="number" class="bg-indigo-800 text-indigo-100 p-2 w-20p" id="starRating" min="0" max="10" required><br>
+
+            <label for="review">Movie Review:</label><br>
+            <textarea class="bg-indigo-800 text-indigo-100 p-2 w-50p" id="review"></textarea><br><br>
+
+            <input type="submit" class="outline btn-link" id="submitEntry" value="submit">
+            <input type="submit" class="outline btn-link" id="deleteButton" value="delete">
+            
+          </form>
+          <br><br>
+          <table class="table bordered striped u-border-4" id="displayData">
+            <tr class ="u-border-4" id="myRow">
+              <td>Movie Name</td>
+              <td>Release Date</td>
+              <td>Rating</td>
+              <td>Review</td>
+              <td>Ranking</td>
+            </tr>
+          </table>
+      </div>
+      <div class="grid-c-2 bg-indigo-800  text-indigo-900 u-round-xs"></div>
+      <div class="grid-c-12  bg-purple-400 u-text-center text-indigo-900 u-round-xs">creator: tiffany semexant<br></div>
+    </div>
+  </body>
+</html>

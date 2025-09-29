@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <title>User Login</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <!-- Responsive viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <script src="main.js" defer></script>
+    <!-- Minified Cirrus CSS -->
+    <link href="https://raw.githack.com/Spiderpig86/Cirrus/master/dist/cirrus.min.css" type="text/css" rel="stylesheet">
+
+    <!-- get rid of favicon error -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  </head>
+  <body class="bg-indigo-100">
+    <div class="grid u-gap-1 u-text-center bg-indigo-100 font-bold">
+      <div class="grid-c-12 bg-purple-400 text-indigo-900 u-round-xs" >
+          <br><br><h2>User Login</h2><br><br>
+      </div>
+      <div class="grid-c-2 bg-indigo-800 text-indigo-900 u-round-xs" ></div>
+      <div class="grid-c-8 bg-indigo-300 text-indigo-900 u-round-xs p-2"  >
+          <p class="font-style-normal">Enter your username and password. Any username and password comibination 
+            not registered will create a new account.</p><br>
+          <form id="credentials">
+            <label for="username">Username (*required):</label><br><br>
+            <input type="text" class="bg-indigo-800 text-indigo-100 w-50p" id="username" minlength="1" required><br><br>
+            
+            <label for="password">Password (*required):</label><br>
+            <input type="password" class="bg-indigo-800 text-indigo-100 w-50p" id="password" minlength="1" required><br><br>
+
+            <input type="submit" class="outline btn-link" id="loginSubmit" value="enter"> <br><br>
+          </form>
+          <br><br>
+      </div>
+      <div class="grid-c-2 bg-indigo-800 text-indigo-900 u-round-xs" ></div>
+      <div class="grid-c-12  bg-purple-400 text-indigo-900 u-round-xs" > creator: tiffany semexant<br></div>
+    </div>
+  </body>
+</html>

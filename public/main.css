@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+/*this is an element selector */
+body{
+    background-color: #D98DA4;
+    color: #D98DA4;
+    /*font family*/
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 1.2;
+}
+
+
+/*this is a class selector*/
+.container{
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'left middle middle middle middle right'
+    'footer footer footer footer footer footer';
+    height: 100%;
+}
+
+.header{
+    grid-area: header;
+    background-color: #5E1225;
+    font-family: "Fascinate", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    border-style: solid;
+    border-color: #752F44;
+    border-width: thick;
+}
+
+.left,
+.middle,
+.right{
+    height: 100%;
+}
+.left{
+    grid-area: left;
+    color:#08360D;
+    background-color: #438B4B;
+    border-left-style: solid;
+    border-left-color: #08360D;
+    border-left-width: thick;
+    border-right-style: solid;
+    border-right-color: #08360D;
+    border-right-width: thick;
+    padding: 5px;
+    min-width: 150px;
+}
+
+.middle{
+    grid-area: middle;
+    background-color: #5E1225;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.right{
+    grid-area: right;
+    color:#08360D;
+    background-color: #438B4B;
+    border-left-style: solid;
+    border-left-color: #08360D;
+    border-left-width: thick;
+    border-right-style: solid;
+    border-right-color: #08360D;
+    border-right-width: thick;
+    padding: 5px;
+    min-width: 150px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #752F44;
+    padding: 10px; 
+    text-align: center;  
+    border-style: solid;
+    border-color: #5E1225;
+    border-width: thick;
+}
+
+@media (max-width: 500px) {
+  .container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+
+
+/*this is an id selector*/
+#para1{
+    font-family: "Limelight", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+}
+
+#bodyTitle{
+    font-family: "Fascinate", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color:#438B4B;
+}
+
+input, #review{
+    height: 35px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 5px 0;
+    border: 2px solid #08360D;
+    border-radius: 5px;
+    background-color: #438B4B;
+    color:#08360D;
+    font-family: "Limelight", sans-serif;
+    font-style: normal;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-size: 15px;
+}
+
+#movieName, #username, #password{
+    width: 50%;
+}
+
+#releaseYear{
+    min-width: 20%;
+}
+
+#starRating{
+    min-width: 10%;
+}
+
+#review{
+    width: 80%;
+    height: 150px;
+    resize: none;
+}
+
+#submitEntry, #deleteButton, #loginSubmit{
+    width: 20%;
+}
+
+#submitEntry:hover, #deleteButton:hover{
+    background-color: #D98DA4;
+    border-color: #752F44;
+    color:#5E1225;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    border: 5px, double, #752F44;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+}
+

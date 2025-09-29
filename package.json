@@ -1,0 +1,18 @@
+{
+  "name": "movie-reviewer",
+  "version": "0.1.0",
+  "description": "A website to keep track of the user's movie reviews.",
+  "author": "Tiffany Semexant",
+  "main": "server.improved.js",
+  "scripts": {
+    "start": "node --env-file=.env server.improved.js"
+  },
+  "dependencies": {
+    "cirrus-ui": "^0.8.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mime": "^2.6.0",
+    "mongodb": "^6.20.0",
+    "mongoose": "^8.18.2"
+  }
+}
